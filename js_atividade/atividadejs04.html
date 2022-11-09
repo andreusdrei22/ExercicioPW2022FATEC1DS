@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4 </title>
+
+    <script>
+
+         //EXERCÍCIO 4
+         function mOver(obj)
+        {
+            obj.innerHTML="Obrigado"
+        }
+
+        function mOut(obj)
+        {
+            obj.innerHTML="Passe com o cursor de seu mause em cima de mim"
+        }
+
+        function checkCookies()
+        {
+            if (navigator.cookieEnabled==true)
+	        {
+	            alert("Cookies são permitidos")
+	        }
+            else
+	        {
+	            alert("Cookies não são permitidos")
+	        }
+        }
+
+        function emFoco(x)
+        {
+            x.style.background = "yellow";
+        }
+
+        function Mudar()
+        {
+            var x=document.getElementById("fname");
+            x.value=x.value.toUpperCase();
+        }
+
+    </script>
+    
+</head>
+
+    <style>
+
+        body
+        {
+
+            background-color: #7FB77E;
+
+        }
+
+       
+        input
+        {
+            
+            margin-left: 150px;
+            font-size: 1.5em;
+        }
+
+        .eventos1
+        {
+            margin-top: 30px;
+            margin-left: 70px;
+        }
+
+    
+    </style>    
+
+    <body onload="checkCookies()">
+
+       
+        <div class="eventos1" onmouseover="mOver(this)" onmouseout="mOut(this)">Passe com o cursor de seu mause em cima de mim</div>
+
+        <hr/>
+
+        <input type="text" onfocus="emFoco(this)">
+
+        <hr/>
+
+        <p>Digite o seu nome e em seguida digite "enter":</p>
+        
+        <input type="text" id="fname" onchange="Mudar()">
+
+    </body>
+    </html>
