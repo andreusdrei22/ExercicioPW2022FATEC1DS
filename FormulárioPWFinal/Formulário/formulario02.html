@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CRIAR CONTA</title>
+    <link rel="stylesheet" type="text/css" href="css/cssbutton.css" />
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet"/>
+    <script defer src="js/form.js"></script>
+    <script defer src="js/cpf.js"></script>
+    <script defer src="js/celular.js"></script>
+   
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h2>Criar Uma Conta</h2>
+        </div>
+        
+        <form name="form" class="form" action="https://formsubmit.co/ajax/andreus.viniguina@gmail.com" id="form" method="POST" data-form>
+
+            <div class="form-control">
+
+                <label for="username" >Nome</label>
+                <input name="Nome" type="text" id="username">
+                <i class="img-success" ><img src="img/success-icon.svg" alt=""></i>
+                <i class="img-error" ><img src="img/error-icon.svg" alt=""></i>
+
+                <small>Error Message</small>
+
+            </div>
+
+            <div class="form-control"><label>Sexo</label></div>
+
+            <div class="radio">
+
+                <input type="radio" value="feminino"> FEMININO<br>
+                <input type="radio" value="masculino"> MASCULINO<br>
+            
+            </div>
+
+            <div class="form-control">
+
+                <label>Email</label>
+                <input name="Email" type="email" id="email">
+                <i class="img-success" ><img src="img/success-icon.svg" alt=""></i>
+                <i class="img-error" ><img src="img/error-icon.svg" alt=""></i>
+
+                <small>Error Message</small>
+
+            </div>
+
+            <div class="form-control">
+
+                <label>Senha</label>
+                <input name="Senha" type="password" id="password">
+                <i class="img-success" ><img src="img/success-icon.svg" alt=""></i>
+                <i class="img-error" ><img src="img/error-icon.svg" alt=""></i>
+
+                <small>Error Message</small>
+
+            </div>
+
+            <div class="form-control">
+
+                <label>Confirme sua senha</label>
+                <input type="password" id="password-two">
+                <i class="img-success" ><img src="img/success-icon.svg" alt=""></i>
+                <i class="img-error" ><img src="img/error-icon.svg" alt=""></i>
+
+                <small>Error Message</small>
+
+            </div>
+
+            <div class="form-control">
+
+                <label>CPF</label>
+                <input name="CPF" type="text" autocomplete="off" maxlength="14" id="cpf">
+                <i class="img-success" ><img src="img/success-icon.svg" alt=""></i>
+                <i class="img-error" ><img src="img/error-icon.svg" alt=""></i>
+
+            </div>
+
+            <div class="form-control">
+
+                <label>Celular</label>
+                <input name="Celular" type="text" autocomplete="off" maxlength="14" id="celular">
+                <i class="img-success" ><img src="img/success-icon.svg" alt=""></i>
+                <i class="img-error" ><img src="img/error-icon.svg" alt=""></i>
+
+            </div>
+
+            <div class="form-control">
+
+                <label>Estado</label>
+                <select name="estado" id="estado">
+                    <option value="estado">Selecione o Estado</option>
+                    <option value="ac">Acre</option>
+                    <option value="al">Alagoas</option>
+                    <option value="am">Amazonas</option>
+                    <option value="ap">Amapá</option>
+                    <option value="ba">Bahia</option>
+                    <option value="ce">Ceará</option>
+                    <option value="df">Distrito Federal</option>
+                    <option value="es">Espírito Santo</option>
+                    <option value="go">Goiás</option>
+                    <option value="ma">Maranhão</option>
+                    <option value="mt">Mato Grosso</option>
+                    <option value="ms">Mato Grosso do Sul</option>
+                    <option value="mg">Minas Gerais</option>
+                    <option value="pa">Pará</option>
+                    <option value="pb">Paraíba</option>
+                    <option value="pr">Paraná</option>
+                    <option value="pe">Pernambuco</option>
+                    <option value="pi">Piauí</option>
+                    <option value="rj">Rio de Janeiro</option>
+                    <option value="rn">Rio Grande do Norte</option>
+                    <option value="ro">Rondônia</option>
+                    <option value="rs">Rio Grande do Sul</option>
+                    <option value="rr">Roraima</option>
+                    <option value="sc">Santa Catarina</option>
+                    <option value="se">Sergipe</option>
+                    <option value="sp">São Paulo</option>
+                    <option value="to">Tocantins</option>
+                </select>
+
+            </div>
+
+            <button name="button" type="submit" class="c-button" data-button>CRIAR CONTA</button>
+
+        </form>
+    </div>
+
+         
+    <script src="https://kit.fontawesome.com/f9e19193d6.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
