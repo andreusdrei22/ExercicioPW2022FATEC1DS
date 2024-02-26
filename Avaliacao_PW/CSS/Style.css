@@ -1,0 +1,22 @@
+.btn{
+    background-color: #4F6F52;
+
+    color: #ffff;
+}
+.link{
+    color: #4F6F52;
+}
+
+body{
+    background-color: #D2E3C8;
+    font-family: comic sans ms;
+}
+
+.input{
+    border-radius: 5px;
+    border-style:double ;
+    border: widith 5px;;
+}
+.alinhamento{
+    margin-left: 20%;
+}
